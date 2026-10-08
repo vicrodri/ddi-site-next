@@ -12,6 +12,12 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  async redirects() {
+    return [
+      { source: "/ddmc", destination: "/military/ddmc", permanent: true },
+      { source: "/ddnf", destination: "/military/ddnf", permanent: true },
+    ];
+  },
 };
 
 export default nextConfig;
