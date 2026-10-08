@@ -31,7 +31,7 @@ const ThemeToggle = () => {
     <button
       type='button'
       onClick={() => setTheme(isDarkTheme ? "light" : "dark")}
-      className='inline-flex h-9 w-9 items-center justify-center rounded-[var(--radius-md)] border border-border bg-secondary text-foreground transition-colors hover:bg-muted hover:text-primary focus-visible:ring-2 focus-visible:ring-ring'
+      className='inline-flex h-9 w-9 items-center justify-center rounded-[var(--radius-md)] border border-border bg-secondary text-foreground transition-colors hover:bg-muted hover:text-primary hover:cursor-pointer focus-visible:ring-2 focus-visible:ring-ring'
       aria-label={isDarkTheme ? "Switch to light theme" : "Switch to dark theme"}
     >
       {isDarkTheme ? <Sun className='h-4 w-4' strokeWidth={2} /> : <Moon className='h-4 w-4' strokeWidth={2} />}
